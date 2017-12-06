@@ -1,6 +1,6 @@
 # -*- coding: utf-8 -*-
 
-from pybel.constants import NAMESPACE_DOMAIN_BIOPROCESS
+from pybel.constants import BELNS_ENCODING_STR, NAMESPACE_DOMAIN_BIOPROCESS
 from pybel_tools.ols_utils import OlsNamespaceOntology
 
 __all__ = [
@@ -13,7 +13,7 @@ __all__ = [
 
 MODULE_NAME = 'efo'
 MODULE_DOMAIN = NAMESPACE_DOMAIN_BIOPROCESS
-MODULE_ENCODING = 'A'
+MODULE_ENCODING = BELNS_ENCODING_STR
 
 ontology = OlsNamespaceOntology(MODULE_NAME, MODULE_DOMAIN, encoding=MODULE_ENCODING)
 
